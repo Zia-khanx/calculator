@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>calculator</h1>
+    </header>
+    <main class="container">
+        <div class="input-box">
+            <input type="text" class="input">
+        </div>
+        <div class="btns" >
+            <div class="group-1">
+                <button class="btn-1" onclick="appendToDisplay('1')" value="1">1</button>
+                <button class="btn-1" onclick="appendToDisplay('2')" value="2">2</button>
+                <button class="btn-1" onclick="appendToDisplay('3')" value="3">3</button>
+            </div>
+           <div class="group-2">
+            <button class="btn-2" onclick="appendToDisplay('4')" value="4">4</button>
+            <button class="btn-2" onclick="appendToDisplay('5')" value="5">5</button>
+            <button class="btn-2" onclick="appendToDisplay('6')" value="6">6</button>
+           </div>
+          <div class="group-3">
+            <button class="btn-3" onclick="appendToDisplay('7')" value="7">7</button>
+            <button class="btn-3" onclick="appendToDisplay('8')" value="8">8</button>
+            <button class="btn-3" onclick="appendToDisplay('9')" value="9">9</button>
+        </div>
+            <div class="group-4">
+            <button class="btn-0" onclick="appendToDisplay('0')" value="0">0</button>
+            <button class="del" onclick="del()" value="Del">Del</button>
+            <button class="add" onclick="appendToDisplay('+')" value="+">+</button>
+            </div>
+            <div class="group-5">
+                <button class="btn-5" onclick="appendToDisplay('-')" value="-">-</button>
+                <button class="btn-5" onclick="appendToDisplay('/')" value="/">/</button>
+                <button class="btn-5" onclick="appendToDisplay('*')" value="*">*</button>
+            </div>
+            <div class="group-6">
+                <button class="clear" onclick="clearDisplay()" value="C">C</button>
+                <button class="equal" onclick="calculate()" value="=">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
